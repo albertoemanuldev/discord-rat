@@ -1,33 +1,28 @@
 # DiscordRAT
 Discord Remote Administration Tool fully written in Python3.
 
-This is a RAT controlled over Discord with over 50 post exploitation modules.
+Este é um RAT controlado pelo Discord com mais de 50 módulos de pós-exploração.
 
-Please use the 2.0 version\
-https://github.com/moom825/Discord-RAT-2.0
 ## **Disclaimer:**
 
-This tool is for educational use only, the author will not be held responsible for any misuse of this tool.
-
-## **Credits**
-This project was originally made by https://github.com/Sp00p64/DiscordRAT, this entire readme.md is made by him too.\
-Credit goes to him for all the original modules and readme.md
+Esta ferramenta é apenas para uso educacional, o autor não será responsabilizado por qualquer uso indevido desta ferramenta.
 
 ## **Setup Guide:**
-You will first need to register a bot with the Discord developer portal and then add the bot to the Discord server that you want to use to control the bot (make sure the bot has administrator privileges in the Discord server).
-Once the bot is created copy the token of your bot and paste it at line 20.
+Primeiro, você precisará registrar um bot no portal do desenvolvedor do Discord e, em seguida, adicionar o bot ao servidor Discord que deseja usar para controlar o bot (certifique-se de que o bot tenha privilégios de administrador no servidor Discord).
+Depois que o bot for criado, copie o token do seu bot e cole-o na linha 20.
 
 Install requirements :
 ```
 pip3 install -r requirements.txt
 ```
-Then if the steps above were successful, you can launch the python file by executing ```python DiscordRAT.py```. It will create a new channel and post a message on the server with a generated session number.\
-Now your bot should be available to use ! 
+Então, se as etapas acima foram bem-sucedidas, você pode iniciar o arquivo python executando ```python DiscordRAT.py```. Ele criará um novo canal e postará uma mensagem no servidor com um número de sessão gerado.\
+Agora seu bot deve estar disponível para uso!
 
 **Requirements:**\
 Python3, Windows(x64)
 
 ## **Modules**
+Todos os modulos estão em inglês.
 ```
 Available commands are :
 --> !message = Show a message box displaying your text / Syntax  = "!message example"
@@ -96,14 +91,9 @@ Available commands are :
 --> !startup = add file to startup(when computer go on this file starts)(Admin rights are required)
 ```
 ## **Advice:**
-If you have problems with the installation of win32api or other modules, try installing it in a python virtual environment.\
-Please avoid opening issues about module related errors as it is caused by your python installation and not a problem inherent of DiscordRAT.\
-If you encounter "AttributeError: module 'enum' has no attribute 'IntFlag'" while compiling to Pyinstaller please do :
+Se você tiver problemas com a instalação do win32api ou outros módulos, tente instalá-lo em um ambiente virtual python.\
+Evite abrir problemas sobre erros relacionados ao módulo, pois isso é causado pela instalação do python e não por um problema do DiscordRAT.\
+Se você encontrar "AttributeError: module 'enum' has no attribute 'IntFlag'" ao compilar para o Pyinstaller, faça:
 ```
 pip uninstall enum34
 ```
-
-## **Contact:**
-Feel free to contact me if you have any problems.
-I also make custom version of this tool (not anymore), so if you want something added feel free to ask by joining by discord server.
-https://discord.gg/THyA9xZPc9.
